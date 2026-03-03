@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='bilibili_endfield_comments_clean' inline='true' name='federated.17sy8j90k4jmnf13g7o1l0770l6f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bilibili_endfield_comments_clean' name='textscan.097psk707l6err1c2zqnw1hom5co'>
+            <connection class='textscan' directory='C:/Users/Lenovo/Documents/trae_projects/python' filename='bilibili_endfield_comments_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.097psk707l6err1c2zqnw1hom5co' name='bilibili_endfield_comments_clean.csv' table='[bilibili_endfield_comments_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='string' name='content' ordinal='0' />
+            <column datatype='string' name='username' ordinal='1' />
+            <column datatype='integer' name='level' ordinal='2' />
+            <column datatype='integer' name='stars' ordinal='3' />
+            <column datatype='integer' name='likes' ordinal='4' />
+            <column datatype='datetime' name='time' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bilibili_endfield_comments_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>content</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[content]</local-name>
+            <parent-name>[bilibili_endfield_comments_clean.csv]</parent-name>
+            <remote-alias>content</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[username]</local-name>
+            <parent-name>[bilibili_endfield_comments_clean.csv]</parent-name>
+            <remote-alias>username</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[level]</local-name>
+            <parent-name>[bilibili_endfield_comments_clean.csv]</parent-name>
+            <remote-alias>level</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stars]</local-name>
+            <parent-name>[bilibili_endfield_comments_clean.csv]</parent-name>
+            <remote-alias>stars</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[bilibili_endfield_comments_clean.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[time]</local-name>
+            <parent-name>[bilibili_endfield_comments_clean.csv]</parent-name>
+            <remote-alias>time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='bilibili_endfield_comments_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]' role='measure' type='quantitative' />
+      <column caption='Content' datatype='string' name='[content]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Level' datatype='integer' name='[level]' role='dimension' type='ordinal' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Stars' datatype='integer' name='[stars]' role='measure' type='quantitative' />
+      <column caption='Time' datatype='datetime' name='[time]' role='dimension' type='ordinal' />
+      <column caption='Username' datatype='string' name='[username]' role='dimension' type='nominal' />
+      <column-instance column='[level]' derivation='None' name='[none:level:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='zh_CN' class='hyper' dbname='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/#TableauTemp_1qbs8bu0wc4if214sfdbo1a4zx5w.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/02/2026 03:53:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>content</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[content]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>content</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bilibili_endfield_comments_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28090</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>username</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[username]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>username</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bilibili_endfield_comments_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28090</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>level</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bilibili_endfield_comments_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stars</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stars]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stars</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bilibili_endfield_comments_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>likes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>likes</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bilibili_endfield_comments_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>bilibili_endfield_comments_clean.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>28090</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:level:ok]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='bilibili_endfield_comments_clean.csv' id='bilibili_endfield_comments_clean.csv_327B8889EA78491DB00BE5C9664061F3'>
+            <properties context=''>
+              <relation connection='textscan.097psk707l6err1c2zqnw1hom5co' name='bilibili_endfield_comments_clean.csv' table='[bilibili_endfield_comments_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='content' ordinal='0' />
+                  <column datatype='string' name='username' ordinal='1' />
+                  <column datatype='integer' name='level' ordinal='2' />
+                  <column datatype='integer' name='stars' ordinal='3' />
+                  <column datatype='integer' name='likes' ordinal='4' />
+                  <column datatype='datetime' name='time' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bilibili_endfield_comments_clean' name='federated.17sy8j90k4jmnf13g7o1l0770l6f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17sy8j90k4jmnf13g7o1l0770l6f'>
+            <column-instance column='[level]' derivation='Attribute' name='[attr:level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[level]' derivation='Count' name='[cnt:level:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Level' datatype='integer' name='[level]' role='dimension' type='ordinal' />
+            <column-instance column='[level]' derivation='None' name='[none:level:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[level]' derivation='Count' name='[pcto:cnt:level:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[attr:level:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:level:ok]' />
+              <wedge-size column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[cnt:level:qk]' />
+              <text column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[attr:level:qk]' />
+              <text column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[pcto:cnt:level:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5FB3AF01-E541-48F1-B660-C82376502546}' />
+    </worksheet>
+    <worksheet name='工作表 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bilibili_endfield_comments_clean' name='federated.17sy8j90k4jmnf13g7o1l0770l6f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17sy8j90k4jmnf13g7o1l0770l6f'>
+            <column-instance column='[stars]' derivation='Avg' name='[avg:stars:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Level' datatype='integer' name='[level]' role='dimension' type='ordinal' />
+            <column-instance column='[level]' derivation='None' name='[none:level:ok]' pivot='key' type='ordinal' />
+            <column caption='Stars' datatype='integer' name='[stars]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:level:ok]' />
+              <text column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[avg:stars:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17sy8j90k4jmnf13g7o1l0770l6f].[avg:stars:qk]</rows>
+        <cols>[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:level:ok]</cols>
+      </table>
+      <simple-id uuid='{2B2535BF-3B96-4E2B-ADE0-F6A20086EC5A}' />
+    </worksheet>
+    <worksheet name='工作表 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bilibili_endfield_comments_clean' name='federated.17sy8j90k4jmnf13g7o1l0770l6f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17sy8j90k4jmnf13g7o1l0770l6f'>
+            <column aggregation='Sum' caption='Level' datatype='integer' name='[level]' role='dimension' type='ordinal' />
+            <column-instance column='[level]' derivation='None' name='[none:level:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[stars]' derivation='None' name='[none:stars:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[level]' derivation='Count' name='[pcto:cnt:level:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[level]' derivation='Sum' name='[pcto:sum:level:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Stars' datatype='integer' name='[stars]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:level:ok]' />
+              <text column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[pcto:cnt:level:qk]' />
+              <text column='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:level:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17sy8j90k4jmnf13g7o1l0770l6f].[pcto:sum:level:qk]</rows>
+        <cols>[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:stars:ok]</cols>
+      </table>
+      <simple-id uuid='{154C39F3-1225-4B17-A370-B0E17F490C27}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:level:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6B46E97A-53DC-4A3B-BD98-28129A8EEC1E}' />
+    </window>
+    <window class='worksheet' name='工作表 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:level:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AF4B779B-1428-4732-B7DA-0E374D6C6C3E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='工作表 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17sy8j90k4jmnf13g7o1l0770l6f].[none:level:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8D30C686-4D70-48D6-831C-C50725A1FAB4}' />
+    </window>
+  </windows>
+</workbook>
